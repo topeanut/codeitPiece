@@ -6,7 +6,7 @@ import { FakeDiv, HeaderWrapper, LogoContainer, StyledButton } from './styles';
 export const Header = ({ showCreateGroupButton }) => {
   return (
     <HeaderWrapper>
-      <FakeDiv></FakeDiv>
+      {showCreateGroupButton && <FakeDiv></FakeDiv>}
       <LogoContainer>
         <img src={logo} alt="logo" />
       </LogoContainer>
