@@ -15,4 +15,12 @@ export const SearchSection = styled.div`
 
 export const TabBox = styled.button`
   width: 66px;
+  height: 45px;
+  border-radius: 22.5px;
+  border: none;
+  color: ${({ theme, $isLock }) =>
+    $isLock === 'true' ? `${theme.colors.white}` : `${theme.colors.black}`};
+  background-color: ${({ theme, $isLock }) =>
+    $isLock === 'true' ? `${theme.colors.black}` : 'transparent'};
+  cursor: pointer;
 `;
