@@ -10,35 +10,31 @@ export const HeaderWrapper = styled.div`
   padding: 26px 180px;
   position: relative;
   gap: 20px;
+
+  @media (max-width: 800px) {
+    padding: 26px 50px;
+  }
 `;
 export const FakeDiv = styled.div`
-  width: 200px;
-  min-width: 150px;
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
 `;
 
 export const LogoContainer = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
-`;
-
-export const StyledButton = styled.div`
-  min-width: 150px;
-  width: 200px;
-  height: 45px;
-
-  @media (max-width: 1000px) {
-    width: 100px;
+  img {
+    min-width: 50px;
+    max-width: 137px;
+    width: 100%;
   }
 `;
 
-export const Header = ({ showCreateGroupButton }) => {
-  return (
-    <HeaderWrapper>
-      <LogoContainer>
-        <img src={logo} alt="logo" />
-      </LogoContainer>
-      {showCreateGroupButton && <StyledButton>그룹 만들기</StyledButton>}
-    </HeaderWrapper>
-  );
-};
+export const StyledButton = styled.div`
+  /* min-width: 150px; */
+  width: 100%;
+  max-width: 200px;
+  height: 45px;
+`;
