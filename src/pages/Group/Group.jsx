@@ -1,5 +1,13 @@
-import { GroupWrapper } from './styles';
+import { GroupWrapper, TabBox } from './styles';
+import { useState } from 'react';
 
 export const Group = () => {
-  return <GroupWrapper>그룹</GroupWrapper>;
+  const [isLock, setIsLock] = useState('public');
+
+  return (
+    <GroupWrapper>
+      <TabBox>공개</TabBox>
+      <TabBox>비공개</TabBox>
+    </GroupWrapper>
+  );
 };
