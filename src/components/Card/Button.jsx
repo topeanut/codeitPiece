@@ -9,8 +9,9 @@ export default function Button({ children }) {
   return <Container>{children}</Container>;
 }
 
-const Container = styled.div`
-  width: 23.4375rem;
+const Container = styled.button`
+  width: 100%;
+  height: 50px;
   border-radius: 6px;
   justify-content: center;
   align-items: center;
@@ -19,4 +20,6 @@ const Container = styled.div`
   overflow: hidden;
   color: ${(props) => props.theme.colors.white};
   background-color: ${(props) => props.theme.colors.black};
+  border: none;
+  cursor: pointer;
 `;
