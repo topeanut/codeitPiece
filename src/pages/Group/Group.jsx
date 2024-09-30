@@ -5,8 +5,6 @@ import { useState } from 'react';
 export const Group = () => {
   const [isLock, setIsLock] = useState('public');
 
-  onclick
-
   return (
     <GroupWrapper>
       <TabBox>공개</TabBox>
