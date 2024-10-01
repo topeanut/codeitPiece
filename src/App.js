@@ -1,23 +1,19 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Group } from './pages/Group/Group';
-import { Post } from './pages/Post/Post';
+import { Post } from './pages/Post/detailPost';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { Header } from './components/Header/Header';
 
 function App() {
- 
-
   const location = useLocation();
   const showCreateGroupButton = location.pathname === '/';
 
   return (
     <div className="App">
-      <Header
-        showCreateGroupButton={showCreateGroupButton}
-      />
+      <Header showCreateGroupButton={showCreateGroupButton} />
       <Routes>
         <Route path="/" element={<Group />} />
-        <Route path="post" element={<Post />} />
+        <Route path="detailpost" element={<Post />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>
