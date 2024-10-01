@@ -37,6 +37,16 @@ const DetailPost = () => {
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <Button text="댓글 등록하기"></Button>
       </div>
+      <hr
+        style={{
+          border: '1px solid gray',
+          height: '2px',
+          margin: '20px 0',
+          strokeWidth: '1px',
+          stroke: 'var(--black-black_282828, #282828)',
+          opacity: '0.5',
+        }}
+      />
     </PostWrapper>
   );
 };
