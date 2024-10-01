@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Group } from './pages/Group/Group';
-import { Post } from './pages/Post/detailPost';
+import DetailPost from './pages/Post/detailPost'; //when use default export
 import { NotFoundPage } from './pages/NotFoundPage';
 import { Header } from './components/Header/Header';
 
@@ -13,7 +13,7 @@ function App() {
       <Header showCreateGroupButton={showCreateGroupButton} />
       <Routes>
         <Route path="/" element={<Group />} />
-        <Route path="detailpost" element={<Post />} />
+        <Route path="detailpost" element={<DetailPost />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

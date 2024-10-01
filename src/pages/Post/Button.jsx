@@ -1,30 +1,21 @@
 import React from 'react';
-import {
-  PostWrapper,
-  Title,
-  Subtitle,
-  ImageWrapper,
-  Content,
-  CommentSection,
-  CommentInputWrapper,
-} from './post_styles';
 import styled from 'styled-components';
 
-export default function Button({ children }) {
-  return <Container>{children}</Container>;
-}
-
-const Container = styled.button`
-  width: 100%;
-  height: 50px;
+const ButtonWrapper = styled.button`
   border-radius: 6px;
+  background: var(--black-black_282828, #282828);
+  display: flex;
+  width: 400px;
+  height: 50px;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  color: ${(props) => props.theme.colors.white};
-  background-color: ${(props) => props.theme.colors.black};
-  border: none;
+  gap: 10px;
+  flex-shrink: 0;
   cursor: pointer;
+  color: #fafafa;
 `;
+
+const Button = ({ text, onClick }) => {
+  return <ButtonWrapper onClick={onClick}>{text}</ButtonWrapper>;
+};
+export default Button;
