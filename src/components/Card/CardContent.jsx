@@ -10,7 +10,7 @@
   }
 
   const Container = styled.div`
-    width: 23.4375rem;
+    width: 100%;
     border-radius: 12px;
     border: 1px solid var(--gray-gray_DDDDDD, #ddd);
     justify-content: center;
