@@ -16,6 +16,7 @@ const ButtonWrapper = styled.button`
 `;
 
 const Button = ({ text, onClick }) => {
+  //if use text
   return <ButtonWrapper onClick={onClick}>{text}</ButtonWrapper>;
 };
 export default Button;
