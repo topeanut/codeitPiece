@@ -3,6 +3,7 @@ import { Group } from './pages/Group/Group';
 import DetailPost from './pages/Post/detailPost'; //when use default export
 import { NotFoundPage } from './pages/NotFoundPage';
 import { Header } from './components/Header/Header';
+import CreatePost from 'pages/Post/CreatePost';
 
 function App() {
   const location = useLocation();
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Group />} />
         <Route path="detailpost" element={<DetailPost />} />
+        <Route path="createpost" element={<CreatePost />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

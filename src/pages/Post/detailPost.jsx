@@ -37,6 +37,7 @@ const DetailPost = () => {
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <Button text="댓글 등록하기"></Button>
       </div>
+      <h1>댓글</h1>
       <hr
         style={{
           border: '1px solid gray',
@@ -47,8 +48,8 @@ const DetailPost = () => {
           opacity: '0.5',
         }}
       />
+      <commentList></commentList>
     </PostWrapper>
   );
 };
-PostWrapper.displayName = 'PostWrapper';
 export default DetailPost;
